@@ -1,0 +1,13 @@
+import React from 'react'
+
+function Avatar({className = '', src}) {
+  return (
+<div className="avatar">
+  <div className={`w-13 rounded-full c ${className}`}>
+    <img src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp" />
+  </div>
+</div>
+  )
+}
+
+export default Avatar
