@@ -2,7 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import ProfileCard from "../components/Homepage/ProfileCard";
 import BlurText from "../components/Homepage/BlurText";
-import DisableElevation from "../components/Buttons"; // our improved button
+import DisableElevation from "../components/Buttons";
+import BackgroundBlobs from "../components/BackgroundBlobs";
 
 function Homepage() {
   const handleAnimationComplete = () => {
@@ -10,7 +11,6 @@ function Homepage() {
   };
 
   const handleDownloadResume = () => {
-    // Replace with your actual resume file path
     const link = document.createElement("a");
     link.href = "/resume.pdf";
     link.download = "John_Rhe_Resume.pdf";
@@ -19,19 +19,16 @@ function Homepage() {
 
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900 overflow-x-hidden relative">
+      <BackgroundBlobs />
       <motion.main
         className="pt-28 px-6 max-w-7xl mx-auto"
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{
-          duration: 0.8,
-          ease: [0.25, 0.8, 0.25, 1],
-        }}
+        transition={{ duration: 0.8, ease: [0.25, 0.8, 0.25, 1] }}
       >
         <div className="font-serif text-xs uppercase tracking-widest text-gray-500 mb-3">
           - Welcome
         </div>
-
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
           <motion.section
             className="lg:col-span-7 flex flex-col gap-6"

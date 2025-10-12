@@ -1,11 +1,14 @@
-function Avatar({className = '', src}) {
+import React from "react";
+import portfolioImg from "../../assets/JR.jpg";
+
+function Avatar({ className = "" }) {
   return (
-<div className="avatar">
-  <div className={`w-13 rounded-full c ${className}`}>
-    <img src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp" />
-  </div>
-</div>
-  )
+    <div className="avatar">
+      <div className={`w-13 rounded-full ${className}`}>
+        <img src={portfolioImg} alt="Portfolio Avatar" />
+      </div>
+    </div>
+  );
 }
 
-export default Avatar
+export default Avatar;

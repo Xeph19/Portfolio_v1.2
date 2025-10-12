@@ -1,21 +1,23 @@
 import React from "react";
 import CertificateCard from "./CertificateCard";
-
+import CertificatePandas from "../../assets/PandasCert.png"
+import CertificateIntroML from "../../assets/MachineLearningCert.png"
+import CertificatePython from "../../assets/PythonCert.png"
 const certificates = [
   {
-    title: "Full Stack Web Development",
-    issuer: "Coursera",
-    image: "/assets/cert1.jpg",
+    title: "Python-Pandas",
+    issuer: "Kaggle",
+    image: CertificatePandas,
   },
   {
-    title: "UI/UX Design Fundamentals",
-    issuer: "Udemy",
-    image: "/assets/cert2.jpg",
+    title: "Intro Machine Learning",
+    issuer: "Kaggle",
+    image: CertificateIntroML,
   },
   {
-    title: "Advanced JavaScript & ES6",
-    issuer: "edX",
-    image: "/assets/cert3.jpg",
+    title: "Python",
+    issuer: "Kaggle",
+    image: CertificatePython,
   },
 ];
 
