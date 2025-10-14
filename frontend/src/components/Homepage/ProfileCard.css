@@ -183,11 +183,14 @@
 
 .pc-avatar-content .avatar {
   width: 100%;
+  height: 100%;                  /* ✅ make it fill the full height */
+  object-fit: cover;             /* ✅ ensures it auto-fits properly */
   position: absolute;
   left: 50%;
+  top: 0;                        /* ✅ fixes extra black space above */
   transform: translateX(-50%) scale(1);
-  bottom: 2px;
   opacity: calc(1.75 - var(--pointer-from-center));
+  display: block;                /* ✅ removes default inline spacing */
 }
 
 .pc-avatar-content::before {
@@ -238,9 +241,9 @@
 
 .pc-mini-avatar img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 50%;
+  height: 100%;            
+  object-fit: cover;       
+  display: block;  
 }
 
 .pc-user-text {

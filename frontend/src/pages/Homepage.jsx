@@ -1,9 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
-import ProfileCard from "../components/Homepage/ProfileCard";
 import BlurText from "../components/Homepage/BlurText";
 import DisableElevation from "../components/Buttons";
 import BackgroundBlobs from "../components/BackgroundBlobs";
+import ProfileCard from "../components/Homepage/ProfileCard";
 
 function Homepage() {
   const handleAnimationComplete = () => {
@@ -20,16 +20,21 @@ function Homepage() {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900 overflow-x-hidden relative">
       <BackgroundBlobs />
+
       <motion.main
-        className="pt-28 px-6 max-w-7xl mx-auto"
+        className="pt-28 px-6 max-w-7xl mx-auto flex flex-col justify-center"
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: [0.25, 0.8, 0.25, 1] }}
       >
+        {/* Welcome Text */}
         <div className="font-serif text-xs uppercase tracking-widest text-gray-500 mb-3">
           - Welcome
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
+
+        {/* Main Grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          {/* Left Content */}
           <motion.section
             className="lg:col-span-7 flex flex-col gap-6"
             initial={{ opacity: 0, x: -40 }}
@@ -37,24 +42,23 @@ function Homepage() {
             transition={{ delay: 0.2, duration: 0.8 }}
           >
             <h1 className="sr-only">Homepage Introduction</h1>
-            <div>
-              <BlurText
-                text="I'm John Rhe — An Aspiring Successful IT Student"
-                delay={150}
-                animateBy="words"
-                direction="top"
-                onAnimationComplete={handleAnimationComplete}
-                className="text-4xl sm:text-5xl font-extrabold leading-tight tracking-tight"
-              />
-            </div>
 
-            <p className="font-serif text-lg leading-relaxed max-w-prose">
+            <BlurText
+              text="I'm John Rhe — An Aspiring Successful IT Student"
+              delay={150}
+              animateBy="words"
+              direction="top"
+              onAnimationComplete={handleAnimationComplete}
+              className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight text-gray-900"
+            />
+
+            <p className="font-serif text-lg leading-relaxed text-gray-700 max-w-prose">
               I specialize in Web Development and enjoy turning ideas into functional,
               impactful applications. Welcome to my portfolio, where I showcase my projects,
               skills, and journey in tech.
             </p>
 
-            <div className="flex items-center gap-3 mt-2">
+            <div className="flex items-center gap-3 mt-4">
               <DisableElevation
                 buttonName="Download Resume"
                 onClick={handleDownloadResume}
@@ -62,6 +66,7 @@ function Homepage() {
             </div>
           </motion.section>
 
+          {/* Right Image */}
           <motion.aside
             className="lg:col-span-5 flex justify-center lg:justify-start"
             initial={{ opacity: 0, x: 40 }}

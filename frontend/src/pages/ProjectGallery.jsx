@@ -36,7 +36,7 @@ function ProjectGallery() {
     {
       title: "Awesome To Dos",
       description:
-        "My first-ever deployed web application — a simple yet functional task manager that allows users to add, edit, and organize their daily to-dos efficiently. It marks my early exploration into full-stack development and web deployment.",
+        "My first-ever deployed web application — a simple yet functional task manager. It marks my early exploration into full-stack development and web deployment.",
       image: toDos,
     },
   ];

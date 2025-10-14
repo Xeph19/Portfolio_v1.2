@@ -2,7 +2,6 @@ import React from "react";
 import Certificates from "../components/About/Certificates";
 import Courses from "../components/About/Courses";
 import TechStack from "../components/About/TechStack";
-import Gallery from "../components/About/Gallery";
 import SocialMedia from "../components/About/SocialMedia";
 
 export default function AboutMePage() {
@@ -21,7 +20,6 @@ export default function AboutMePage() {
         <Certificates />
         <Courses />
         <TechStack />
-        <Gallery />
         <SocialMedia />
       </div>
     </section>
