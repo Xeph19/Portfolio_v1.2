@@ -7,5 +7,5 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
     react()],
-    base:[process.env.VITE_BASE_PATH || "/Portfolio_v1.2"]
+  base:[process.env.VITE_BASE_PATH || "/Portfolio_v1.2"],
 })

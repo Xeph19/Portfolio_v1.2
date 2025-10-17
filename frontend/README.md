@@ -1,12 +1,58 @@
-# React + Vite
+# 💼 John Rhe Poblacion — Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal developer portfolio!  
+This site showcases my projects, skills, and experience as an aspiring IT student passionate about technology and design.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Live Demo
+🔗 **Portfolio:** 
+Link:
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧑‍💻 About Me
+Hi! I'm **John Rhe Poblacion**, a **BSIT student at Western Institute of Technology (WIT)**.  
+I love building user-friendly web applications and exploring modern technologies.
+
+---
+
+## ⚙️ Tech Stack
+- **Frontend:** React.js, Tailwind CSS,  
+- **Backend:** Node.js, Express.js  
+- **Database:** MongoDB, Supabase
+- **Tools:** Git, Vite, Figma, VS Code 
+
+---
+
+## 🚀 Features
+- 📱 Responsive design for all devices  
+- ⚡ Smooth animations  
+- 🧭 Easy navigation  
+- 💬 Showcases projects and contact info  
+
+---
+
+## 🧩 Projects
+| Project | Description | Stack |
+|----------|--------------|-------|
+| **UpTalk** | Messaging Web Application | MERN |
+| **MyWay** | IoT monitoring for rice drying | React + Supabase + AI model API |
+
+---
+
+## 🛠️ Run Locally
+To run the portfolio locally:
+
+```bash
+# Clone the repository
+git clone https://github.com/Xeph19/Portfolio_v1.2
+
+# Go inside
+cd frontend
+
+# Install dependencies
+npm install
+
+# Start the dev server
+npm run dev
