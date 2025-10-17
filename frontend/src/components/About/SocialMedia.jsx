@@ -3,10 +3,10 @@ import { FaFacebookF, FaInstagram, FaGithub, FaLinkedinIn } from "react-icons/fa
 import { motion } from "framer-motion";
 
 const socials = [
-  { icon: <FaFacebookF />, link: "https://facebook.com" },
-  { icon: <FaInstagram />, link: "https://instagram.com" },
-  { icon: <FaGithub />, link: "https://github.com" },
-  { icon: <FaLinkedinIn />, link: "https://linkedin.com/in/yourprofile" }, // Added LinkedIn
+  { icon: <FaFacebookF />, link: "https://www.facebook.com/j.rhe20" },
+  { icon: <FaInstagram />, link: "https://www.instagram.com/j.rhe18" },
+  { icon: <FaGithub />, link: "https://github.com/Xeph19" },
+  { icon: <FaLinkedinIn />, link: "https://www.linkedin.com/in/john-rhe-poblacion-b36b78304" },
 ];
 
 export default function SocialMedia() {
