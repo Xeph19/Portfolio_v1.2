@@ -3,6 +3,9 @@ import CertificateCard from "./CertificateCard";
 import CertificatePandas from "../../assets/PandasCert.png"
 import CertificateIntroML from "../../assets/MachineLearningCert.png"
 import CertificatePython from "../../assets/PythonCert.png"
+
+const certificatePdf = (filename) => `${import.meta.env.BASE_URL}${filename}`;
+
 const certificates = [
   {
     title: "Python-Pandas",
@@ -19,6 +22,21 @@ const certificates = [
     issuer: "Kaggle",
     image: CertificatePython,
   },
+  {
+    title: "Programming Fundamentals",
+    issuer: "PDF Certificate",
+    documentUrl: certificatePdf("SIMPLI_1.pdf"),
+  },
+  {
+    title: "Introduction to Express.js",
+    issuer: "PDF Certificate",
+    documentUrl: certificatePdf("SIMPLI_2.pdf"),
+  },
+  {
+    title: "What Is Software Development?",
+    issuer: "PDF Certificate",
+    documentUrl: certificatePdf("SIMPLI_3.pdf"),
+  },
 ];
 
 export default function Certificates() {
@@ -32,6 +50,7 @@ export default function Certificates() {
             title={cert.title}
             issuer={cert.issuer}
             image={cert.image}
+            documentUrl={cert.documentUrl}
           />
         ))}
       </div>

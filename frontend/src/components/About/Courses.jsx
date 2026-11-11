@@ -5,14 +5,27 @@ const courses = [
   {
     name: "Python Project for Data Science",
     url: "https://www.coursera.org/learn/python-project-for-data-science",
+    platform: "Coursera",
   },
   {
     name: "Machine Learning with Python",
     url: "https://www.coursera.org/learn/machine-learning-with-python",
+    platform: "Coursera",
   },
   {
     name: "Python for Applied Data Science and AI",
     url: "https://www.coursera.org/learn/python-for-applied-data-science-ai",
+    platform: "Coursera",
+  },
+  {
+    name: "AWS Networking Zero to Hero: Masterclass",
+    url: "https://www.udemy.com/course/aws-networking-zero-to-hero-masterclass/",
+    platform: "Udemy",
+  },
+  {
+    name: "Laravel From Scratch",
+    url: "https://laracasts.com/series/laravel-8-from-scratch",
+    platform: "Laracasts",
   },
 ];
 
@@ -42,7 +55,9 @@ export default function Courses() {
             <h3 className="text-lg font-semibold text-blue-600 hover:underline">
               {course.name}
             </h3>
-            <p className="text-sm text-gray-500 mt-1">View on Coursera</p>
+            <p className="text-sm text-gray-500 mt-1">
+              View on {course.platform}
+            </p>
           </motion.a>
         ))}
       </div>

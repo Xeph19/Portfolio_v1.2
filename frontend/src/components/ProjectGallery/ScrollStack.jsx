@@ -12,7 +12,7 @@ export const ScrollStackItem = ({ children, index = 0, itemClassName = "" }) => 
       initial={{ opacity: 0, y: 60, scale: 0.985 }}
       animate={inView ? { opacity: 1, y: 0, scale: 1 } : { opacity: 0, y: 60, scale: 0.985 }}
       transition={{ duration: 0.65, ease: "easeOut", delay: index * 0.06 }}
-      className={`scroll-stack-card relative w-full h-80 my-8 p-8 md:p-12 rounded-[28px] shadow-[0_10px_30px_rgba(2,6,23,0.08)] box-border origin-top bg-white ${itemClassName}`}
+      className={`scroll-stack-card relative my-6 w-full rounded-[28px] bg-white p-4 shadow-[0_10px_30px_rgba(2,6,23,0.08)] box-border origin-top sm:p-6 md:p-8 ${itemClassName}`}
       style={{
         backfaceVisibility: "hidden",
         transformStyle: "preserve-3d",
@@ -61,10 +61,10 @@ const ScrollStack = ({ children, className = "", useLenis = true }) => {
       className={`relative w-full ${className}`}
       style={{
        
-        minHeight: "100vh",
+        minHeight: "auto",
       }}
     >
-      <div className="scroll-stack-inner pt-[12vh] px-4 md:px-20 pb-[20vh] max-w-5xl mx-auto">
+      <div className="scroll-stack-inner mx-auto max-w-5xl px-0 pb-16 pt-8 sm:px-2 md:px-8 md:pb-20 md:pt-10">
         {React.Children.map(children, (child, i) => {
          
           return React.cloneElement(child, { index: i });

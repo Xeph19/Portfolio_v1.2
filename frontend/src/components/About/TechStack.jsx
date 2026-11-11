@@ -1,12 +1,12 @@
 import React from "react";
 import { FaReact, FaNodeJs, FaDatabase, FaFigma, FaPython } from "react-icons/fa";
-import { SiMongodb, SiExpress, SiTailwindcss, SiPandas } from "react-icons/si";
+import { SiLaravel, SiExpress, SiTailwindcss, SiPandas } from "react-icons/si";
 import { motion } from "framer-motion";
 
 const techStack = [
   { name: "React", icon: <FaReact className="text-blue-500" /> },
   { name: "Node.js", icon: <FaNodeJs className="text-green-500" /> },
-  { name: "MongoDB", icon: <SiMongodb className="text-green-700" /> },
+  { name: "Laravel", icon: <SiLaravel className="text-[#ff2d20]" /> },
   { name: "Express", icon: <SiExpress className="text-gray-700" /> },
   { name: "Tailwind CSS", icon: <SiTailwindcss className="text-teal-400" /> },
   { name: "Figma", icon: <FaFigma className="text-pink-500" /> },

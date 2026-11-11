@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import Avatar from "./Avatar";
 
 const NAVBAR_HEIGHT = 80;
 const navLinks = [
@@ -49,24 +48,24 @@ const Navbar = ({ className = "" }) => {
       initial={{ y: -80, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className={`fixed top-0 left-1/2 -translate-x-1/2 z-50 rounded-full w-[90%] max-w-5xl transition-all duration-500 ${
+      className={`fixed top-3 left-1/2 z-50 w-[calc(100%-2rem)] max-w-5xl -translate-x-1/2 rounded-full transition-all duration-500 sm:w-[90%] ${
         scrolled
           ? "bg-white/90 backdrop-blur-xl shadow-lg"
           : "bg-white/40 backdrop-blur-md shadow-sm"
       } ${className}`}
       style={{ height: NAVBAR_HEIGHT }}
     >
-      <div className="px-8 py-3 flex items-center justify-between w-full font-poppins">
+      <div className="relative flex h-full w-full items-center px-6 font-poppins sm:px-8">
         {/* Logo / Title */}
         <div
           onClick={() => handleScrollTo("home")}
-          className="text-2xl font-semibold tracking-tight text-gray-900 hover:text-gray-700 cursor-pointer transition-colors"
+          className="cursor-pointer text-xl font-semibold tracking-tight text-gray-900 transition-colors hover:text-gray-700 sm:text-2xl"
         >
           My Portfolio
         </div>
 
         {/* Desktop Nav Links */}
-        <div className="hidden md:flex gap-8 text-lg font-medium text-gray-700 relative">
+        <div className="absolute left-1/2 hidden -translate-x-1/2 gap-7 text-base font-medium text-gray-700 md:flex lg:gap-8 lg:text-lg">
           {navLinks.map((link) => (
             <div key={link.name} className="relative">
               <button
@@ -100,16 +99,13 @@ const Navbar = ({ className = "" }) => {
           ))}
         </div>
 
-        {/* Avatar + Mobile Menu Button */}
-        <div className="flex items-center gap-3">
-          <Avatar className="ml-2" src="" alt="rhe" />
-          <button
-            onClick={() => setMenuOpen(!menuOpen)}
-            className="md:hidden p-2 rounded-full hover:bg-gray-200 transition"
-          >
-            {menuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
-        </div>
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="ml-auto rounded-full p-2 transition hover:bg-gray-200 md:hidden"
+          aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
+        >
+          {menuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+        </button>
       </div>
 
       {/* Mobile Menu */}

@@ -5,6 +5,8 @@ import DisableElevation from "../components/Buttons";
 import BackgroundBlobs from "../components/BackgroundBlobs";
 import ProfileCard from "../components/Homepage/ProfileCard";
 
+const resumeUrl = `${import.meta.env.BASE_URL}Poblacion_Resume.pdf`;
+
 function Homepage() {
   const handleAnimationComplete = () => {
     console.log("Animation completed!");
@@ -12,8 +14,8 @@ function Homepage() {
 
   const handleDownloadResume = () => {
     const link = document.createElement("a");
-    link.href = "/resume.pdf";
-    link.download = "John_Rhe_Resume.pdf";
+    link.href = resumeUrl;
+    link.download = "Poblacion_Resume.pdf";
     link.click();
   };
 
@@ -29,7 +31,7 @@ function Homepage() {
       >
         {/* Welcome Text */}
         <div className="font-serif text-xs uppercase tracking-widest text-gray-500 mb-3">
-          - Welcome
+          — Welcome to My Portfolio
         </div>
 
         {/* Main Grid */}
@@ -44,7 +46,7 @@ function Homepage() {
             <h1 className="sr-only">Homepage Introduction</h1>
 
             <BlurText
-              text="I'm John Rhe — An Aspiring Successful IT Student"
+              text="Hi, I'm John Rhe — An Aspiring Backend Developer."
               delay={150}
               animateBy="words"
               direction="top"
@@ -53,9 +55,10 @@ function Homepage() {
             />
 
             <p className="font-serif text-lg leading-relaxed text-gray-700 max-w-prose">
-              I specialize in Web Development and enjoy turning ideas into functional,
-              impactful applications. Welcome to my portfolio, where I showcase my projects,
-              skills, and journey in tech.
+              I'm an IT student passionate about backend development, building reliable
+              systems, and turning complex requirements into functional applications. I enjoy
+              working with databases, APIs, and server-side technologies while continuously
+              improving my skills through hands-on projects.
             </p>
 
             <div className="flex items-center gap-3 mt-4">
