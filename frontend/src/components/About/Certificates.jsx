@@ -37,6 +37,11 @@ const certificates = [
     issuer: "PDF Certificate",
     documentUrl: certificatePdf("SIMPLI_3.pdf"),
   },
+  {
+    title: "National Hackathon — Certificate of Participation",
+    issuer: "Participant",
+    documentUrl: certificatePdf("Certificate%20of%20Participation_Sinatra.pdf"),
+  },
 ];
 
 export default function Certificates() {
