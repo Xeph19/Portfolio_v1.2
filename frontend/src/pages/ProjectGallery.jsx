@@ -8,42 +8,44 @@ const psitsStackedLogo = `${import.meta.env.BASE_URL}PSITS%20WIT%20Stacked%20Log
 function ProjectGallery() {
   const projects = [
     {
-      title: "MyWay — An AI Assessment for Career Path",
-      meta: "Backend, Frontend & AI Developer | PERN-S | Jan 2026 – Oct 2026",
+      title: "MyWay — An AI Assessment For Career Path",
+      meta: "Full-stack Developer | PostgreSQL, Express, React, Node.js | Aug 2025 – Oct 2026",
       image: mywayImg,
-      url: "https://myway-app-delta.vercel.app/signup",
+      url: "https://myway-app-delta.vercel.app",
       highlights: [
-        "Built a RAG pipeline with DeepSeek, vector embeddings, and academic data for personalized IT roadmaps.",
-        "Applied RIASEC and SFIA assessments to match learners with IT specializations.",
-        "Developed PERN-S services, data models, and workflows for recommendations and progress tracking.",
+        "Independently developed the frontend, backend services, and PostgreSQL database architecture for career assessment workflows, IT specialization mapping, and student progress tracking.",
+        "Integrated DeepSeek APIs, vector embeddings, and curated university curricula into a RAG workflow for personalized learning roadmaps.",
+        "Implemented RIASEC- and SFIA-based career mapping logic to match learners with tailored IT specializations.",
       ],
       outcome:
-        "Supported structured career exploration for 185 students, validated by 6 experts.",
+        "Supported structured career evaluation involving 117 students and 6 IT industry professionals.",
     },
     {
       title: "PSITS Official Website",
-      meta: "Backend Developer | PERN-S | March 2026 – August 2026",
-      url: "https://witpsits-webapp.vercel.app/",
+      meta: "Backend Developer | PostgreSQL, Express, React, Node.js | Mar 2026 – Aug 2026",
+      url: "https://witpsits-webapp.vercel.app",
       image: psitsStackedLogo,
       imageFit: "contain",
       highlights: [
-        "Built dashboard backend features for content, announcements, and student events.",
-        "Implemented data workflows for publishing and content updates.",
+        "Developed RESTful API endpoints using Express.js and PostgreSQL to manage organizational announcements, events, and website content with CRUD operations and validation.",
+        "Engineered dashboard backend workflows and data services for content publishing and real-time updates.",
       ],
       outcome:
-        "Gave administrators one place to maintain announcements and event information.",
+        "Gave administrators a centralized, validated platform to maintain organizational announcements and event information.",
     },
     {
-      title: "ITara — Digital Student Clearance Management System",
-      meta: "Backend Developer | PERN-S | Jul 2026 – Aug 2026",
-      initials: "ITara",
-      url: "https://witpsits-attendace-portal.vercel.app/",
+      title: "PSITS Digital Attendance Slip",
+      meta: "Backend Developer | PostgreSQL, Express, React, Node.js | Jul 2026 – Aug 2026",
+      image: psitsStackedLogo,
+      imageFit: "contain",
+      initials: "PSITS",
+      url: "https://witpsits-attendace-portal.vercel.app",
       highlights: [
-        "Built backend services for a department-wide digital clearance system.",
-        "Implemented clearance tracking, record verification, and database operations.",
+        "Developed backend functionality for digital attendance recording, centralized records, and fast data retrieval to support student event management.",
+        "Implemented database operations and validation workflows using Express.js and PostgreSQL to streamline event tracking.",
       ],
       outcome:
-        "Replaced manual record handling with a centralized clearance workflow.",
+        "Replaced manual attendance tracking with an automated, centralized digital attendance portal.",
     },
   ];
 
